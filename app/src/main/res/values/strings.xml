@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">KotlinTest</string>
+    <string name="corrected">Правильно</string>
+    <string name="Incorrected">Неправильно</string>
+    <string name="true_button">true</string>
+    <string name="false_button">false</string>
+    <string name="questions_one">Kotlin - ООП язык?</string>
+    <string name="questions_two">Kotlin создали JetBrains?</string>
+    <string name="questions_free">В Kotlin есть switch - case?</string>
+    <string name="questions_four">print - это вывод на консоль?</string>
+    <string name="next_button">Next</string>
+</resources>

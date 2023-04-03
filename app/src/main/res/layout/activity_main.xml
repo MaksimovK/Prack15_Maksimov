@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/questinos_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text = "@string/questions_one"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintVertical_bias="1">
+
+        <Button
+            android:id="@+id/button_true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/true_button"
+            android:backgroundTint="@color/white"/>
+
+        <Button
+            android:id="@+id/button_false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/false_button"
+            android:backgroundTint="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintVertical_bias="1">
+
+        <Button
+        android:id="@+id/back_button"
+        android:layout_width="66dp"
+        android:layout_height="68dp"
+        android:background="@drawable/arrowleft"
+        android:text="@string/next_button"
+        android:textColor="@color/black" />
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/arrow"
+        android:text="@string/next_button"
+        android:textColor="@color/black" />
+    </LinearLayout>
+</LinearLayout>
