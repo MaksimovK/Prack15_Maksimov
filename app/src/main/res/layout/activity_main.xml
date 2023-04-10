@@ -62,4 +62,17 @@
         android:text="@string/next_button"
         android:textColor="@color/black" />
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintVertical_bias="1">
+        <Button
+            android:id="@+id/chet_nechet"
+            android:layout_width="120dp"
+            android:layout_height="56dp"
+            android:background="@color/white"
+            android:text="@string/chet_nechet"
+            android:textColor="@color/black" />
+    </LinearLayout>
 </LinearLayout>

@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var nextButton: Button
     private lateinit var questionsText: TextView
     private lateinit var backButton: Button
+    private lateinit var chet_nechet: Button
     private val questionBank = listOf(
             Question(R.string.questions_one, true),
             Question(R.string.questions_two, true),
@@ -46,6 +47,7 @@ class MainActivity : AppCompatActivity() {
         falseButton = findViewById(R.id.button_false)
         trueButton = findViewById(R.id.button_true)
         questionsText = findViewById(R.id.questinos_text)
+        chet_nechet = findViewById(R.id.chet_nechet)
 
         questionsText.setOnClickListener {
             currentIndex = (currentIndex + 1) % questionBank.size
@@ -61,6 +63,29 @@ class MainActivity : AppCompatActivity() {
             }
             else {
                 currentIndex = 3
+            }
+            updateQuestion()
+        }
+        chet_nechet.setOnClickListener {
+            if(currentIndex % 2 == 0)
+            {
+                Toast.makeText(this, R.string.corrected, Toast.LENGTH_SHORT).show()
+                if(currentIndex > 0) {
+                    currentIndex = (currentIndex - 1) % questionBank.size
+                }
+                else {
+                    currentIndex = 3
+                }
+            }
+            else
+            {
+                Toast.makeText(this, R.string.Incorrected, Toast.LENGTH_SHORT).show()
+                if(currentIndex > 0) {
+                    currentIndex = (currentIndex - 1) % questionBank.size
+                }
+                else {
+                    currentIndex = 3
+                }
             }
             updateQuestion()
         }

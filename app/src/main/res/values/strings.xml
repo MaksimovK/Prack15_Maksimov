@@ -9,4 +9,5 @@
     <string name="questions_free">В Kotlin есть switch - case?</string>
     <string name="questions_four">print - это вывод на консоль?</string>
     <string name="next_button">Next</string>
+    <string name="chet_nechet">Четный/Нечетный</string>
 </resources>
